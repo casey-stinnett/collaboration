@@ -1,5 +1,5 @@
 body {
-	background-color: white;
+	/*background-color: white;*/
 }
 
 #sidebar {
@@ -10,6 +10,14 @@ body {
 	width: 500px;
 	height: 100%;
 	display: inline-block;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#sidebar img {
+	width: 85%;
+	margin: 0 auto;
+	display: block;
 }
 
 #grid-container {
@@ -21,7 +29,10 @@ body {
 }
 
 .delete {
-
+	z-index: 999;
+	position: fixed;
+	top: 2px;
+	right: 2px;
 }
 
 .image {
