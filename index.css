@@ -35,6 +35,16 @@ body {
 	right: 2px;
 }
 
+.delete span {
+	font-weight: 700;
+	color: red;
+	opacity: .5;
+}
+
+.delete span:hover {
+	opacity: 1;
+}
+
 .image {
 	background-color: #f0f0f0;
 	height: 400px;
