@@ -5,7 +5,14 @@ $(function(){
 
   $(document).on('click', '.image-to-add', function(){
     let image_src = $(this).attr('src');
-    $('.images').append(`<img src="${image_src}">`);
+    $('#grid-container').append(`
+      <div class="image">
+        <button class="delete">
+          <span>X</span>
+        </button>
+        <img src="${image_src}">
+      </div>
+    `);
   });
 
 });
